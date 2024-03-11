@@ -1,0 +1,677 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+<meta name="x-apple-disable-message-reformatting">
+<meta content="telephone=no" name="format-detection">
+<style type="text/css">
+*,
+*:after,
+*:before {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+* {
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+html,
+body,
+.document {
+width: 100% !important;
+height: 100% !important;
+margin: 0;
+padding: 0;
+font-family: Georgia, Times New Roman, serif;
+}
+body {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-rendering: optimizeLegibility;
+}
+div[style*="margin: 16px 0"] {
+margin: 0 !important;
+}
+table,
+td {
+mso-table-lspace: 0pt;
+mso-table-rspace: 0pt;
+}
+table {
+border-spacing: 0;
+border-collapse: collapse;
+table-layout: fixed;
+margin: 0 auto;
+}
+img {
+-ms-interpolation-mode: bicubic;
+max-width: 100%;
+border: 0;
+}
+*[x-apple-data-detectors] {
+color: inherit !important;
+text-decoration: none !important;
+}
+.x-gmail-data-detectors,
+.x-gmail-data-detectors *,
+.aBn {
+border-bottom: 0 !important;
+cursor: default !important;
+}
+.btn {
+-webkit-transition: all 200ms ease;
+transition: all 200ms ease;
+}
+.btn:hover {
+background-color: dodgerblue;
+}
+/*a:-webkit-any-link */
+@media screen and (max-width: 750px) {
+.container {
+width: 100%;
+margin: auto;
+}
+.stack {
+display: block;
+width: 100%;
+max-width: 100%;
+}
+}
+</style>
+<style type="text/css">
+@font-face {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-display: swap;
+src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://assets.glide.mailplus.co.uk/prod/assets/OpenSansSemiBold.ba5cde21eeea0d57ab7efefc99596cce.ttf) format('ttf');
+unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+font-family: 'Merriweather-Black';
+font-weight: bold;
+font-style: normal;
+src: url(https://assets.glide.mailplus.co.uk/prod/assets/Merriweather-Black.a4a36d277b2e11e547906c2d67d5f7c7.woff);
+mso-font-alt: 'Arial';
+}
+@font-face {
+font-family: Merriweather-Light;
+font-weight: normal;
+font-style: normal;
+src: url(https://assets.glide.mailplus.co.uk/prod/assets/Merriweather-Light.938750e24d265b1b5e6a0be9b8f5720c.woff) ;
+}
+@font-face {
+font-family: Merriweather-Light;
+font-weight: normal;
+font-style: italic;
+src: url(https://assets.glide.mailplus.co.uk/prod/assets/Merriweather-LightItalic.242fe31d8418870d7c736724034fa430.woff) ;
+}
+</style>
+<style type="text/css">
+html,
+body {
+font-family: Merriweather-Light, Georgia, Times New Roman, serif;
+font-size: 22px !important;
+}
+td{
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+}
+h1, h2, h3, h4, h5, h6 {
+margin: 0;
+padding: 0;
+}
+h1 {
+font-family: Merriweather-Black, Georgia, Times New Roman, serif;
+margin: 40px 0 10px 0;
+font-size: 50px !important;
+line-height: 0.9em !important;
+font-weight: normal;
+color: #000;
+text-transform: uppercase;
+}
+h2 {
+font-family: Merriweather-Black, Georgia, Times New Roman, serif;
+font-size: 28px !important;
+font-weight: normal;
+margin: 30px 0 0 0;
+}
+.feature-top-stories h2 {
+font-size: 28px !important;
+}
+h3 {
+font-family: Merriweather-Black, Georgia, Times New Roman, serif;
+font-size: 24px !important;
+line-height: 1.2em !important;
+color: #263238;
+font-weight: bold;
+margin: 30px 0 5px 0;
+}
+h4 {
+font-size: 20px !important;
+font-family: Merriweather-Black, Georgia, Times New Roman, serif;
+font-weight: bold;
+line-height: 1.5em !important;
+}
+h2 + h3 {
+margin-top: 10px;
+}
+h1 + h2 {
+margin-top: 0;
+}
+h2 + h1 {
+margin-top: 0;
+}
+p {
+margin: 0 0 10px 0;
+font-size: 22px;
+}
+div {
+font-size: 22px;
+}
+.footer p {
+font-size: 16px;
+}
+h4 + p {
+margin-top: 10px;
+}
+hr + h3 {
+margin-top: 10px;
+}
+hr+div>h3 {
+margin-top: 10px;
+}
+ul {
+margin: 0;
+padding: 0;
+list-style-position: inside;
+}
+.body-content{
+padding-bottom: 10px !important;
+}
+.caption {
+font-family: "Open Sans", sans-serif;
+font-size: 18px !important;
+padding-bottom: 1em !important;
+margin-top: 0px !important;
+}
+h3 a {
+font-family: Merriweather-Black, Georgia, Times New Roman, serif;
+font-weight: bold;
+}
+h4.date-line {
+font-family: "Open Sans", sans-serif;
+font-weight: 600;
+text-align: center;
+font-size: 18px !important;
+margin-bottom: 10px;
+}
+table.image-wrapper + h3 {
+margin-top: 0;
+}
+a,
+a:active,
+a:hover,
+a:visited {
+text-decoration: none;
+color: black !important;
+}
+p a.read-cta {
+font-size: 16px !important;
+color: #46606c !important;
+font-weight: bold;
+text-decoration: none !important;
+font-family: "Open Sans Bold", sans-serif;
+}
+p a.read-cta:after {
+content: "\25BA";
+color: #cc0033;
+margin-left: 5px;
+}
+p a {
+text-decoration: underline;
+color: black;
+}
+p {
+margin-bottom: 10px;
+}
+hr {
+border: none;
+border-top: 1px solid black;
+margin: 0;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+td.promo-box>h3 {
+margin-top: 0;
+}
+.topic-tag {
+font-family: 'Open Sans', Verdana, Arial, sans-serif;
+font-weight: bold !important;
+text-transform: uppercase;
+padding: 3px 15px 3px 15px;
+line-height: 20px;
+font-size: 17px;
+letter-spacing: 3.4px;
+display: inline-block;
+border: 1px solid #000000;
+color: #000000;
+}
+.footer {
+margin-top: 20px;
+font-size: 14px;
+line-height: inherit;
+}
+.footer p a {
+color: inherit !important;
+font-size: inherit !important;
+}
+.footer p a:after {
+content: none;
+}
+@media only screen and (max-width:576px) {
+.feature-top-stories h2 {
+font-size: 36px !important;
+}
+h2 {
+font-size: 36px !important;
+}
+p, div span, div em {
+font-size: 30px;
+}
+.topic-tag {
+font-size: 21px;
+}
+p a.read-cta {
+font-size: 22px !important;
+}
+}
+</style>
+<!-- mso and ie patch -->
+<!--[if gte mso 9]>
+<style type="text/css">
+html, body{
+/* mso-line-height-rule:exactly; */
+line-height: 1.5em;
+}
+h1{
+font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", "Arial Black", "Arial Bold", sans-serif;
+mso-line-height-rule:exactly;
+line-height: 2.8em !important;
+letter-spacing: -2px;
+margin-top: 10px !important;
+font-size: 40px;
+}
+h2{
+font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", "Arial Black", "Arial Bold", sans-serif;
+mso-line-height-rule:exactly;
+line-height: 2.2em !important;
+font-size: 28px;
+letter-spacing: -1px;
+}
+h3{
+margin-top: 10px !important;
+margin-bottom: 15px !important;
+letter-spacing: -1px;
+}
+table.image-wrapper + h3 {
+margin-top:0 !important;
+margin-bottom: 0 !important;
+}
+h4{
+font-size: 18px !important;
+}
+img{
+margin-top: 10px !important;
+margin-bottom: 10px !important;
+}
+.caption{
+font-size: 16px !important;
+}
+</style>
+<![endif]-->
+<!-- mso and ie patch ENDS-->
+<!-- mso and ie patch -->
+<!--[if lt mso 9]>
+<style type="text/css">
+h1{
+mso-line-height-rule:exactly;
+line-height: 10em;
+}
+</style>
+<![endif]-->
+<!-- mso and ie patch ENDS-->
+<style type="text/css">
+@media only screen and (max-device-width: 768px) {
+.body-content {
+padding:0 20px 80px 20px!important;
+}
+}
+@media only screen and (max-device-width: 320px) {
+.body-content {
+padding:0 10px 80px 10px!important;
+}
+}
+</style>
+</head>
+<body style="background-color: #bbbbbb;">
+<span class="preheader" style="color: transparent;  display: none;  height: 0;  max-height: 0;  max-width: 0;  opacity: 0;  overflow: hidden;  mso-hide: all;  visibility: hidden;  width: 0;"> PLUS: Trump ally in bizarre four-letter outburst at Emily Maitlis </span>
+<table width="590" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color: white">
+<tr>
+<td>
+<table width="100%" style="padding: 0; margin-bottom: 0px" class="image-wrapper">
+<tr>
+<td style="padding: 0px 0 0px 0">
+<a href="https://link-replica.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9uZXdzbGV0dGVycy81cG0tbmV3c2xldHRlci8zNDcyNjcvaHVudC1wdXRzLXVrLWJhY2stb24tcGF0aC10by1sb3ctdGF4ZXM_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPU1OLU1haWxQbHVzLUJyaWVmaW5ncy0yNDAzMDZfQlI1X05FV1NMRVRURVImc2lnbmluPWF1dG8j/65ccb5bc8e50e1c63703ea6bB424b48b2" style="margin:0">
+<img alt="" src="https://media.glide.mailplus.co.uk/prod/images/gm_preview/02743d707201-tmnewsletter5pmbillbowkett.jpg" width="590" style="width: 100%; max-width: 590px;margin:0px 0 0px 0" />
+</a>
+</td>
+</tr>
+</table>
+<table width="550" align="center" border="0" cellspacing="0" cellpadding="20">
+<tr>
+<td class="body-content">
+<h4 class="date-line">Wednesday, March 6, 2024</h4>
+<h4 style="font-family: Merriweather-Black, Georgia, Times New Roman, serif;
+font-weight: normal !important;
+margin: 0"></h4>
+<div id="e4FfV-j9mfr" class="fr-embedded"><p id="eseLetleKFbj">Good evening,</p><p id="ejCPKTFLOego">In tonight's 5pm briefing Chancellor Jeremy Hunt put Britain back on a ‘path to low taxes’ in today's Budget as he unveiled a 2p cut in national insurance and handed child benefit to thousands of families, Emily Maitlis was told to ‘f*** off’ by a US Republican over claims ‘Jewish space lasers’ had ignited wildfires in California, and Leo Woodall has taken One Day fans behind the scenes with a series of candid snaps...</p><div id="eXSnL19WOlql" class="fr-embedded">
+<table class="feature-top-stories" style="margin-top: 30px; width: 100%">
+<tr>
+<td class="content-padded" align="center" style="padding: 0;
+text-align: center;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 10px">
+<tr>
+<td style="text-align: center; padding: 20px 0 5px 0;"><span class="topic-tag">TONIGHT&#x27;S TOP STORIES</span></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td data-y="HI:hi">
+<table width="100%" style="padding: 0; margin-bottom: 5px" class="image-wrapper">
+<tr>
+<td style="padding: 5px 0 5px 0">
+<a href="https://link-replica.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ3MjY4L2h1bnQtcHV0cy11ay1iYWNrLW9uLXBhdGgtdG8tbG93LXRheGVzP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1NTi1NYWlsUGx1cy1CcmllZmluZ3MtMjQwMzA2X0JSNV9ORVdTTEVUVEVSJnNpZ25pbj1hdXRv/65ccb5bc8e50e1c63703ea6bB7c09596f" style="margin:0">
+<img alt="" src="https://media.glide.mailplus.co.uk/prod/images/gm_preview/be5368872308-header5231334.jpg" width="550" style="width: 100%; max-width: 550px;margin:5px 0 5px 0" />
+</a>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td class="content-padded" style="font-family: Merriweather-Light, serif; padding:0 0 8px 0;">
+<a href="https://link-replica.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ3MjY4L2h1bnQtcHV0cy11ay1iYWNrLW9uLXBhdGgtdG8tbG93LXRheGVzP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1NTi1NYWlsUGx1cy1CcmllZmluZ3MtMjQwMzA2X0JSNV9ORVdTTEVUVEVSJnNpZ25pbj1hdXRv/65ccb5bc8e50e1c63703ea6bC7c09596f" style="margin:0">
+<h2 style="margin:0 0 0 0">Hunt puts UK back on path to low taxes
+</h2>
+</a>
+</td>
+</tr>
+<tr><td style="padding-bottom: 20px !important;"></td></tr>
+<tr><td data-y="HI:hi">
+<table width="100%" style="padding: 0; margin-bottom: 5px" class="image-wrapper">
+<tr>
+<td style="padding: 5px 0 5px 0">
+<a href="https://link-replica.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ3MjY5L3RydW1wLWFsbHktaW4tYml6YXJyZS1mb3VyLWxldHRlci1vdXRidXJzdC1hdC1lbWlseS1tYWl0bGlzP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1NTi1NYWlsUGx1cy1CcmllZmluZ3MtMjQwMzA2X0JSNV9ORVdTTEVUVEVSJnNpZ25pbj1hdXRv/65ccb5bc8e50e1c63703ea6bB00901a23" style="margin:0">
+<img alt="" src="https://media.glide.mailplus.co.uk/prod/images/gm_preview/33d7b90dbdff-header5231339.jpg" width="550" style="width: 100%; max-width: 550px;margin:5px 0 5px 0" />
+</a>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td class="content-padded" style="font-family: Merriweather-Light, serif; padding:0 0 8px 0;">
+<a href="https://link-replica.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ3MjY5L3RydW1wLWFsbHktaW4tYml6YXJyZS1mb3VyLWxldHRlci1vdXRidXJzdC1hdC1lbWlseS1tYWl0bGlzP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1NTi1NYWlsUGx1cy1CcmllZmluZ3MtMjQwMzA2X0JSNV9ORVdTTEVUVEVSJnNpZ25pbj1hdXRv/65ccb5bc8e50e1c63703ea6bC00901a23" style="margin:0">
+<h2 style="margin:0 0 0 0">Trump ally  in bizarre four-letter outburst at Emily Maitlis
+</h2>
+</a>
+</td>
+</tr>
+<tr><td style="padding-bottom: 20px !important;"></td></tr>
+<tr><td data-y="HI:hi">
+<table width="100%" style="padding: 0; margin-bottom: 5px" class="image-wrapper">
+<tr>
+<td style="padding: 5px 0 5px 0">
+<a href="https://link-replica.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ3Mjc0L29uZS1kYXktaW4tbGlmZS1vZi1sZW8tYW5kLWNvP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1NTi1NYWlsUGx1cy1CcmllZmluZ3MtMjQwMzA2X0JSNV9ORVdTTEVUVEVSJnNpZ25pbj1hdXRv/65ccb5bc8e50e1c63703ea6bBe101870b" style="margin:0">
+<img alt="" src="https://media.glide.mailplus.co.uk/prod/images/gm_preview/e4ac02b419bb-header5231325.jpg" width="550" style="width: 100%; max-width: 550px;margin:5px 0 5px 0" />
+</a>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td class="content-padded" style="font-family: Merriweather-Light, serif; padding:0 0 8px 0;">
+<a href="https://link-replica.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ3Mjc0L29uZS1kYXktaW4tbGlmZS1vZi1sZW8tYW5kLWNvP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1NTi1NYWlsUGx1cy1CcmllZmluZ3MtMjQwMzA2X0JSNV9ORVdTTEVUVEVSJnNpZ25pbj1hdXRv/65ccb5bc8e50e1c63703ea6bCe101870b" style="margin:0">
+<h2 style="margin:0 0 0 0">One Day in life of Leo and Co
+</h2>
+</a>
+</td>
+</tr>
+</table>
+</div><hr id="eVt0jAKy0XVC" /><p id="evx7tYnWocxx" class=""><strong id="eH0M-RBYs1xe">Daily poll</strong><span>: </span>
+<a href="https://link-replica.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvcG9saXRpY3MvMzQ3MjYwL2FyZS15b3UtaGFwcHktd2l0aC1qZXJlbXktaHVudHMtc3ByaW5nLWJ1ZGdldD91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249TU4tTWFpbFBsdXMtQnJpZWZpbmdzLTI0MDMwNl9CUjVfTkVXU0xFVFRFUiZzaWduaW49YXV0bw/65ccb5bc8e50e1c63703ea6bB3afc7f85" style="margin:0">Are you happy with Jeremy Hunt&#x27;s Spring Budget?</a></p><hr id="e3wmc5yTcCF8" /><p id="erpaWMtouev0" class=""><strong id="e05cSTTk7OeB">Listen</strong><span>: </span>
+<a href="https://link-replica.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9yYWRpbz91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249TU4tTWFpbFBsdXMtQnJpZWZpbmdzLTI0MDMwNl9CUjVfTkVXU0xFVFRFUiZzaWduaW49YXV0bw/65ccb5bc8e50e1c63703ea6bBf803b298" style="margin:0">The Trial: Constance Marten and Mark Gordon</a></p><hr id="eS9J6XMBDNGM" /><p id="e1D96YEvckjp" class=""></p><div id="eCxlzmr4dCc7" class="fr-embedded">
+<table class="feature-top-stories" style="margin-top: 30px; width: 100%">
+<tr>
+<td class="content-padded" align="center" style="padding: 0;
+text-align: center;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 10px">
+<tr>
+<td style="text-align: center; padding: 20px 0 5px 0;"><span class="topic-tag">FEMAIL</span></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td data-y="HI:hi">
+<table width="100%" style="padding: 0; margin-bottom: 5px" class="image-wrapper">
+<tr>
+<td style="padding: 5px 0 5px 0">
+<a href="https://link-replica.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ3MjcwL2NhcmUtaG9tZXMtYXJlLXNvLWxvbmVseS1pZi10aGUtc3RhZmYtZG9udC1zcGVhay1nb29kLWVuZ2xpc2g_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPU1OLU1haWxQbHVzLUJyaWVmaW5ncy0yNDAzMDZfQlI1X05FV1NMRVRURVImc2lnbmluPWF1dG8/65ccb5bc8e50e1c63703ea6bB9cc63392" style="margin:0">
+<img alt="" src="https://media.glide.mailplus.co.uk/prod/images/gm_preview/bb2123b05580-header5231329.jpg" width="550" style="width: 100%; max-width: 550px;margin:5px 0 5px 0" />
+</a>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td class="content-padded" style="font-family: Merriweather-Light, serif; padding:0 0 8px 0;">
+<a href="https://link-replica.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ3MjcwL2NhcmUtaG9tZXMtYXJlLXNvLWxvbmVseS1pZi10aGUtc3RhZmYtZG9udC1zcGVhay1nb29kLWVuZ2xpc2g_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPU1OLU1haWxQbHVzLUJyaWVmaW5ncy0yNDAzMDZfQlI1X05FV1NMRVRURVImc2lnbmluPWF1dG8/65ccb5bc8e50e1c63703ea6bC9cc63392" style="margin:0">
+<h2 style="margin:0 0 0 0">Care homes are so lonely if the staff don’t speak good English
+</h2>
+</a>
+</td>
+</tr>
+</table>
+</div><hr id="enMaTJetWYVb" /><p id="eBQdM4yaKrDe" class=""><strong id="eC_kfZ58pZm7">Market watch</strong><span>: </span>
+<a href="https://link-replica.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ3MjcxL2JiYy1saWNlbmNlLWZlZS1maXJtcy1zaGFyZXMtcGx1bmdlLWFzLWl0LXJlcG9ydHMtMTA2bS1sb3NzP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1NTi1NYWlsUGx1cy1CcmllZmluZ3MtMjQwMzA2X0JSNV9ORVdTTEVUVEVSJnNpZ25pbj1hdXRv/65ccb5bc8e50e1c63703ea6bBd09b714c" style="margin:0">The latest news from the City</a></p><hr id="eZcGx9qEyysO" /><p style="text-align: left;" id="eNvUGqKVPQuK"></p><div id="e-iycNKCWumX" class="fr-embedded">
+<table class="feature-top-stories" style="margin-top: 30px; width: 100%">
+<tr>
+<td class="content-padded" align="center" style="padding: 0;
+text-align: center;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 10px">
+<tr>
+<td style="text-align: center; padding: 20px 0 5px 0;"><span class="topic-tag">MAIL SPORT</span></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td data-y="HI:hi">
+<table width="100%" style="padding: 0; margin-bottom: 5px" class="image-wrapper">
+<tr>
+<td style="padding: 5px 0 5px 0">
+<a href="https://link-replica.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ3Mjc3L2J1cm5sZXktcGxvdC10by1zdWUtcHJlbWllci1sZWFndWUtb3Zlci1ldmVydG9uLXBvaW50cy1kZWR1Y3Rpb24_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPU1OLU1haWxQbHVzLUJyaWVmaW5ncy0yNDAzMDZfQlI1X05FV1NMRVRURVImc2lnbmluPWF1dG8/65ccb5bc8e50e1c63703ea6bB1401c587" style="margin:0">
+<img alt="" src="https://media.glide.mailplus.co.uk/prod/images/gm_preview/adeabd93aed4-header5231346.jpg" width="550" style="width: 100%; max-width: 550px;margin:5px 0 5px 0" />
+</a>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td class="content-padded" style="font-family: Merriweather-Light, serif; padding:0 0 8px 0;">
+<a href="https://link-replica.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ3Mjc3L2J1cm5sZXktcGxvdC10by1zdWUtcHJlbWllci1sZWFndWUtb3Zlci1ldmVydG9uLXBvaW50cy1kZWR1Y3Rpb24_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPU1OLU1haWxQbHVzLUJyaWVmaW5ncy0yNDAzMDZfQlI1X05FV1NMRVRURVImc2lnbmluPWF1dG8/65ccb5bc8e50e1c63703ea6bC1401c587" style="margin:0">
+<h2 style="margin:0 0 0 0">Burnley plot to sue Premier League over Everton points deduction
+</h2>
+</a>
+</td>
+</tr>
+</table>
+</div><hr id="eyQKpSPdiQBT" /><p id="e3to02RmYfWS" class=""></p><div id="eMUDwziVc8Dr" class="fr-embedded">
+<table class="feature-top-stories" style="margin-top: 30px; width: 100%">
+<tr>
+<td class="content-padded" align="center" style="padding: 0;
+text-align: center;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 10px">
+<tr>
+<td style="text-align: center; padding: 20px 0 5px 0;"><span class="topic-tag">WHAT TO WATCH TONIGHT</span></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td data-y="HI:hi">
+<table width="100%" style="padding: 0; margin-bottom: 5px" class="image-wrapper">
+<tr>
+<td style="padding: 5px 0 5px 0">
+<a href="https://link-replica.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ3Mjc5L3RoZS1yaXNlLWFuZC1mYWxsLW9mLWJvcmlzLWpvaG5zb24_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPU1OLU1haWxQbHVzLUJyaWVmaW5ncy0yNDAzMDZfQlI1X05FV1NMRVRURVImc2lnbmluPWF1dG8/65ccb5bc8e50e1c63703ea6bB2bf1b724" style="margin:0">
+<img alt="" src="https://media.glide.mailplus.co.uk/prod/images/gm_preview/e8a53abd4d47-header5231255.jpg" width="550" style="width: 100%; max-width: 550px;margin:5px 0 5px 0" />
+</a>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td class="content-padded" style="font-family: Merriweather-Light, serif; padding:0 0 8px 0;">
+<a href="https://link-replica.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ3Mjc5L3RoZS1yaXNlLWFuZC1mYWxsLW9mLWJvcmlzLWpvaG5zb24_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPU1OLU1haWxQbHVzLUJyaWVmaW5ncy0yNDAzMDZfQlI1X05FV1NMRVRURVImc2lnbmluPWF1dG8/65ccb5bc8e50e1c63703ea6bC2bf1b724" style="margin:0">
+<h2 style="margin:0 0 0 0">The Rise And Fall Of Boris Johnson
+</h2>
+</a>
+</td>
+</tr>
+</table>
+</div><hr id="eSpqWsPaPtKO" /><p style="text-align: center;" id="ebEEHsNOj_P-"><strong id="ePG2CJAGS_fv">Tomorrow's news today</strong></p><p id="eFcZgH3xsgPC" class="">• Business Secretary Kemi Badenoch to give keynote speech at the Global Trade conference at Chatham House</p><p id="evWN-TVH3ml-" class="">• The latest annual NHS staff survey for England will be published</p><hr id="eGEx6iFsN4kN" /><p id="e6P90ZbXrECH" class=""></p><div id="e5gIuuo9gX-8" class="fr-embedded">
+<table class="feature-top-stories" style="margin-top: 30px; width: 100%">
+<tr>
+<td class="content-padded" align="center" style="padding: 0;
+text-align: center;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 10px">
+<tr>
+<td style="text-align: center; padding: 20px 0 5px 0;"><span class="topic-tag">PICTURES OF THE DAY</span></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td data-y="BI: -si bi">
+<table width="100%" style="padding: 0; margin-bottom: 5px" class="image-wrapper">
+<tr>
+<td style="padding: 5px 0 5px 0">
+<a href="https://link-replica.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvcGljcy1vZi10aGUtZGF5LzM0NzI2My9iYXNrZXRiYWxsLWR1bmtzLW1hY2JldGgtYW5kLWxlZ28tZGlub3NhdXJzP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1NTi1NYWlsUGx1cy1CcmllZmluZ3MtMjQwMzA2X0JSNV9ORVdTTEVUVEVSJnNpZ25pbj1hdXRv/65ccb5bc8e50e1c63703ea6bBe625dd57" style="margin:0">
+<img alt="" src="https://media.glide.mailplus.co.uk/prod/images/gm_preview/dad84ff1de6d-sei194779796.jpg" width="550" style="width: 100%; max-width: 550px;margin:5px 0 5px 0" />
+</a>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td class="content-padded" style="font-family: Merriweather-Light, serif; padding:0 0 8px 0;">
+<a href="https://link-replica.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvcGljcy1vZi10aGUtZGF5LzM0NzI2My9iYXNrZXRiYWxsLWR1bmtzLW1hY2JldGgtYW5kLWxlZ28tZGlub3NhdXJzP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1NTi1NYWlsUGx1cy1CcmllZmluZ3MtMjQwMzA2X0JSNV9ORVdTTEVUVEVSJnNpZ25pbj1hdXRv/65ccb5bc8e50e1c63703ea6bCe625dd57" style="margin:0">
+<h2 style="margin:0 0 0 0">Basketball dunks, Macbeth, and Lego dinosaurs
+</h2>
+</a>
+</td>
+</tr>
+</table>
+</div><hr id="e4GDDSR4qq8F" /><p id="ewuTOv0foLzp"><span>Enjoy this email? Sign up to our other newsletters including </span>
+<a href="https://link-replica.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL3Nob3diaXovMTY5NTEzL3NpZ24tdXAtbmV3cy1kYWlseS1tYWlsLXR2LXNob3diaXotbmV3c2xldHRlci1taWtlLW11bHZpaGlsbD91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249TU4tTWFpbFBsdXMtQnJpZWZpbmdzLTIzMDczMV9CUjVfTkVXU0xFVFRFUiZzaWduaW49YXV0bw/65ccb5bc8e50e1c63703ea6bBba1f9682" style="margin:0">TV AND SHOWBIZ</a><span>, </span>
+<a href="https://link-replica.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3Mvcm95YWxzLzY1NjI1L3NpZ24tdXAtbm93LWZvci10aGUtbmV3LXBhbGFjZS1jb25maWRlbnRpYWwtbmV3c2xldHRlci1ieS1kaWFyeS1lZGl0b3ItcmljaGFyZC1lZGVuP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1NTi1NYWlsUGx1cy1CcmllZmluZ3MtMjMwNzMxX0JSNV9ORVdTTEVUVEVSJnNpZ25pbj1hdXRv/65ccb5bc8e50e1c63703ea6bB7122e90b" style="margin:0">PALACE CONFIDENTIAL</a><span> and </span>
+<a href="https://link-replica.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL3Nwb3J0LzIwNjQ4OC9zaWduLXVwLW5vdy1mb3ItdGhlLW1haWwtdHJhbnNmZXItY29uZmlkZW50aWFsLW5ld3NsZXR0ZXI_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPU1OLU1haWxQbHVzLUJyaWVmaW5ncy0yNDAzMDZfQlI1X05FV1NMRVRURVImc2lnbmluPWF1dG8/65ccb5bc8e50e1c63703ea6bB0df77596" style="margin:0">TRANSFER CONFIDENTIAL</a></p><p id="eP6GqMoJEOR1"><span>Are you enjoying the 5pm Briefing? Tell us what you think at </span>
+<a href="mailto:editor@mailplus.co.uk" style="margin:0">editor@mailplus.co.uk</a></p></div><div id="efFCrHW2XyB" class="fr-embedded"><!-- social icons  -->
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace:0;mso-table-rspace:0">
+<tbody>
+<tr>
+<td>
+<table width="510" class="colF" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace:0;mso-table-rspace:0;background-color:#fff;color:#000;">
+<tbody>
+<tr>
+<td width="100%" align="center" style="mso-table-lspace:0;mso-table-rspace:0; padding-top:0;border-top:0;border-right:0;border-bottom:0;border-left:0; ">
+<table align="center" class="colC c" width="510" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace:0;mso-table-rspace:0">
+<tr>
+<td style="padding: 50px 0px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td align="center" style="font-size:0px;word-break:break-word;">
+<!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" ><tr><td><![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+<tr>
+<td style="padding:4px;vertical-align:middle; width:50px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-radius:3px;width:38px;">
+<tr>
+<td style="padding:0px;font-size:0;height:38px;vertical-align:middle;width:38px;"> <a href="https://link.news.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL3RoZW1haWxwbHVzLz91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249TU4tTWFpbFBsdXMtQnJpZWZpbmdzLTI0MDMwNl9CUjVfTkVXU0xFVFRFUiZzaWduaW49YXV0bw/65ccb5bc8e50e1c63703ea6bB195663f0" target="_blank"> <img height="38" src="https://media.sailthru.com/composer/images/sailthru-prod-4w5/20220629_Social_Facebook.gif" style="border-radius:3px;display:block;" width="38" /> </a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--[if mso | IE]></td><td><![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+<tr>
+<td style="padding:4px;vertical-align:middle; width:50px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-radius:3px;width:38px;">
+<tr>
+<td style="padding:0px;font-size:0;height:38px;vertical-align:middle;width:38px;"> <a href="https://link.news.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly90d2l0dGVyLmNvbS9tYWlscGx1cz91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249TU4tTWFpbFBsdXMtQnJpZWZpbmdzLTI0MDMwNl9CUjVfTkVXU0xFVFRFUiZzaWduaW49YXV0bw/65ccb5bc8e50e1c63703ea6bBf8fb00cb" target="_blank"> <img height="38" src="https://media.sailthru.com/composer/images/sailthru-prod-4w5/20220629_Social_Twitter.gif" style="border-radius:3px;display:block;" width="38" /> </a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--[if mso | IE]></td><td><![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+<tr>
+<td style="padding:4px;vertical-align:middle; width:50px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-radius:3px;width:38px;">
+<tr>
+<td style="padding:0px;font-size:0;height:38px;vertical-align:middle;width:38px;"> <a href="https://link.news.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9tYWlscGx1cy8_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPU1OLU1haWxQbHVzLUJyaWVmaW5ncy0yNDAzMDZfQlI1X05FV1NMRVRURVImc2lnbmluPWF1dG8/65ccb5bc8e50e1c63703ea6bB0cd12d94" target="_blank"> <img height="38" src="https://media.sailthru.com/composer/images/sailthru-prod-4w5/20220629_Social_Insta.gif" style="border-radius:3px;display:block;" width="38" /> </a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--[if mso | IE]></td></tr></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- social icons ends  --></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="590" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<div class="footer">
+<text><p>Add <a href="mailto:newsletter@news.dailymail.co.uk">newsletter@news.dailymail.co.uk</a> to your safelist or contact list to ensure you never miss an email from us.</p>
+<p>You can change your email preferences at any time&nbsp;<a href="https://link.news.mailplus.co.uk/manage/4w5/mp-preference?email=simon.nachtergaele@gmail.com&hash=aa983b66338ba0d4bb14b0763d456dc5"  target="_blank">here</a>.</p>
+<p>This email was sent by Associated Newspapers Limited, Northcliffe House, 2 Derry Street, London W8 5TT Registered in England and Wales with company number 00084121.</p>
+<p><a href="https://link.news.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cubXltYWlsYWNjb3VudC5jby51ay9wYWdlcy9tYWlscGx1cy90ZXJtc0FuZENvbmRpdGlvbnM_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPU1OLU1haWxQbHVzLUJyaWVmaW5ncy0yNDAzMDZfQlI1X05FV1NMRVRURVImc2lnbmluPWF1dG8/65ccb5bc8e50e1c63703ea6bBd3ec6c59" target="_blank">Terms</a>&nbsp;|&nbsp;<a href="https://link.news.mailplus.co.uk/click/34588470.127392/aHR0cHM6Ly93d3cubXltYWlsYWNjb3VudC5jby51ay9wYWdlcy9tYWlscGx1cy9wcml2YWN5QW5kQ29va2llc1BvbGljeT91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249TU4tTWFpbFBsdXMtQnJpZWZpbmdzLTI0MDMwNl9CUjVfTkVXU0xFVFRFUiZzaWduaW49YXV0bw/65ccb5bc8e50e1c63703ea6bB10ec531a" target="_blank">Privacy Policy</a></p>
+<div style=”display:none!important;font-size:0px;”>https://link.news.mailplus.co.uk/oc/65ccb5bc8e50e1c63703ea6bklcmu.2qao/e6b84572&list=mailplus</div></text>
+</div>
+</td>
+</tr>
+</table>
+<div style="display: none;"><a href="https://link.news.mailplus.co.uk/click/34588470.127392/aHR0cDovL3d3dy5kYWlseW1haWwuY28udWs_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPU1OLU1haWxQbHVzLUJyaWVmaW5ncy0yNDAzMDZfQlI1X05FV1NMRVRURVImc2lnbmluPWF1dG8/65ccb5bc8e50e1c63703ea6bBf6b5f177"><img src="https://link.news.mailplus.co.uk/img/65ccb5bc8e50e1c63703ea6bklcmu.2qao/1a62c5c7.gif" alt="" border="0" /></a></div>
+</body>
+</html>

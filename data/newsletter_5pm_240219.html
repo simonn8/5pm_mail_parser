@@ -1,0 +1,699 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+<meta name="x-apple-disable-message-reformatting">
+<meta content="telephone=no" name="format-detection">
+<style type="text/css">
+*,
+*:after,
+*:before {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+* {
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+html,
+body,
+.document {
+width: 100% !important;
+height: 100% !important;
+margin: 0;
+padding: 0;
+font-family: Georgia, Times New Roman, serif;
+}
+body {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-rendering: optimizeLegibility;
+}
+div[style*="margin: 16px 0"] {
+margin: 0 !important;
+}
+table,
+td {
+mso-table-lspace: 0pt;
+mso-table-rspace: 0pt;
+}
+table {
+border-spacing: 0;
+border-collapse: collapse;
+table-layout: fixed;
+margin: 0 auto;
+}
+img {
+-ms-interpolation-mode: bicubic;
+max-width: 100%;
+border: 0;
+}
+*[x-apple-data-detectors] {
+color: inherit !important;
+text-decoration: none !important;
+}
+.x-gmail-data-detectors,
+.x-gmail-data-detectors *,
+.aBn {
+border-bottom: 0 !important;
+cursor: default !important;
+}
+.btn {
+-webkit-transition: all 200ms ease;
+transition: all 200ms ease;
+}
+.btn:hover {
+background-color: dodgerblue;
+}
+/*a:-webkit-any-link */
+@media screen and (max-width: 750px) {
+.container {
+width: 100%;
+margin: auto;
+}
+.stack {
+display: block;
+width: 100%;
+max-width: 100%;
+}
+}
+</style>
+<style type="text/css">
+@font-face {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-display: swap;
+src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://assets.glide.mailplus.co.uk/prod/assets/OpenSansSemiBold.ba5cde21eeea0d57ab7efefc99596cce.ttf) format('ttf');
+unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+font-family: 'Merriweather-Black';
+font-weight: bold;
+font-style: normal;
+src: url(https://assets.glide.mailplus.co.uk/prod/assets/Merriweather-Black.a4a36d277b2e11e547906c2d67d5f7c7.woff);
+mso-font-alt: 'Arial';
+}
+@font-face {
+font-family: Merriweather-Light;
+font-weight: normal;
+font-style: normal;
+src: url(https://assets.glide.mailplus.co.uk/prod/assets/Merriweather-Light.938750e24d265b1b5e6a0be9b8f5720c.woff) ;
+}
+@font-face {
+font-family: Merriweather-Light;
+font-weight: normal;
+font-style: italic;
+src: url(https://assets.glide.mailplus.co.uk/prod/assets/Merriweather-LightItalic.242fe31d8418870d7c736724034fa430.woff) ;
+}
+</style>
+<style type="text/css">
+html,
+body {
+font-family: Merriweather-Light, Georgia, Times New Roman, serif;
+font-size: 22px !important;
+}
+td{
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+}
+h1, h2, h3, h4, h5, h6 {
+margin: 0;
+padding: 0;
+}
+h1 {
+font-family: Merriweather-Black, Georgia, Times New Roman, serif;
+margin: 40px 0 10px 0;
+font-size: 50px !important;
+line-height: 0.9em !important;
+font-weight: normal;
+color: #000;
+text-transform: uppercase;
+}
+h2 {
+font-family: Merriweather-Black, Georgia, Times New Roman, serif;
+font-size: 28px !important;
+font-weight: normal;
+margin: 30px 0 0 0;
+}
+.feature-top-stories h2 {
+font-size: 28px !important;
+}
+h3 {
+font-family: Merriweather-Black, Georgia, Times New Roman, serif;
+font-size: 24px !important;
+line-height: 1.2em !important;
+color: #263238;
+font-weight: bold;
+margin: 30px 0 5px 0;
+}
+h4 {
+font-size: 20px !important;
+font-family: Merriweather-Black, Georgia, Times New Roman, serif;
+font-weight: bold;
+line-height: 1.5em !important;
+}
+h2 + h3 {
+margin-top: 10px;
+}
+h1 + h2 {
+margin-top: 0;
+}
+h2 + h1 {
+margin-top: 0;
+}
+p {
+margin: 0 0 10px 0;
+font-size: 22px;
+}
+div {
+font-size: 22px;
+}
+.footer p {
+font-size: 16px;
+}
+h4 + p {
+margin-top: 10px;
+}
+hr + h3 {
+margin-top: 10px;
+}
+hr+div>h3 {
+margin-top: 10px;
+}
+ul {
+margin: 0;
+padding: 0;
+list-style-position: inside;
+}
+.body-content{
+padding-bottom: 10px !important;
+}
+.caption {
+font-family: "Open Sans", sans-serif;
+font-size: 18px !important;
+padding-bottom: 1em !important;
+margin-top: 0px !important;
+}
+h3 a {
+font-family: Merriweather-Black, Georgia, Times New Roman, serif;
+font-weight: bold;
+}
+h4.date-line {
+font-family: "Open Sans", sans-serif;
+font-weight: 600;
+text-align: center;
+font-size: 18px !important;
+margin-bottom: 10px;
+}
+table.image-wrapper + h3 {
+margin-top: 0;
+}
+a,
+a:active,
+a:hover,
+a:visited {
+text-decoration: none;
+color: black !important;
+}
+p a.read-cta {
+font-size: 16px !important;
+color: #46606c !important;
+font-weight: bold;
+text-decoration: none !important;
+font-family: "Open Sans Bold", sans-serif;
+}
+p a.read-cta:after {
+content: "\25BA";
+color: #cc0033;
+margin-left: 5px;
+}
+p a {
+text-decoration: underline;
+color: black;
+}
+p {
+margin-bottom: 10px;
+}
+hr {
+border: none;
+border-top: 1px solid black;
+margin: 0;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+td.promo-box>h3 {
+margin-top: 0;
+}
+.topic-tag {
+font-family: 'Open Sans', Verdana, Arial, sans-serif;
+font-weight: bold !important;
+text-transform: uppercase;
+padding: 3px 15px 3px 15px;
+line-height: 20px;
+font-size: 17px;
+letter-spacing: 3.4px;
+display: inline-block;
+border: 1px solid #000000;
+color: #000000;
+}
+.footer {
+margin-top: 20px;
+font-size: 14px;
+line-height: inherit;
+}
+.footer p a {
+color: inherit !important;
+font-size: inherit !important;
+}
+.footer p a:after {
+content: none;
+}
+@media only screen and (max-width:576px) {
+.feature-top-stories h2 {
+font-size: 36px !important;
+}
+h2 {
+font-size: 36px !important;
+}
+p, div span, div em {
+font-size: 30px;
+}
+.topic-tag {
+font-size: 21px;
+}
+p a.read-cta {
+font-size: 22px !important;
+}
+}
+</style>
+<!-- mso and ie patch -->
+<!--[if gte mso 9]>
+<style type="text/css">
+html, body{
+/* mso-line-height-rule:exactly; */
+line-height: 1.5em;
+}
+h1{
+font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", "Arial Black", "Arial Bold", sans-serif;
+mso-line-height-rule:exactly;
+line-height: 2.8em !important;
+letter-spacing: -2px;
+margin-top: 10px !important;
+font-size: 40px;
+}
+h2{
+font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", "Arial Black", "Arial Bold", sans-serif;
+mso-line-height-rule:exactly;
+line-height: 2.2em !important;
+font-size: 28px;
+letter-spacing: -1px;
+}
+h3{
+margin-top: 10px !important;
+margin-bottom: 15px !important;
+letter-spacing: -1px;
+}
+table.image-wrapper + h3 {
+margin-top:0 !important;
+margin-bottom: 0 !important;
+}
+h4{
+font-size: 18px !important;
+}
+img{
+margin-top: 10px !important;
+margin-bottom: 10px !important;
+}
+.caption{
+font-size: 16px !important;
+}
+</style>
+<![endif]-->
+<!-- mso and ie patch ENDS-->
+<!-- mso and ie patch -->
+<!--[if lt mso 9]>
+<style type="text/css">
+h1{
+mso-line-height-rule:exactly;
+line-height: 10em;
+}
+</style>
+<![endif]-->
+<!-- mso and ie patch ENDS-->
+<style type="text/css">
+@media only screen and (max-device-width: 768px) {
+.body-content {
+padding:0 20px 80px 20px!important;
+}
+}
+@media only screen and (max-device-width: 320px) {
+.body-content {
+padding:0 10px 80px 10px!important;
+}
+}
+</style>
+</head>
+<body style="background-color: #bbbbbb;">
+<span class="preheader" style="color: transparent;  display: none;  height: 0;  max-height: 0;  max-width: 0;  opacity: 0;  overflow: hidden;  mso-hide: all;  visibility: hidden;  width: 0;"> PLUS the latest news, comment and features </span>
+<table width="590" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color: white">
+<tr>
+<td>
+<table width="100%" style="padding: 0; margin-bottom: 0px" class="image-wrapper">
+<tr>
+<td style="padding: 0px 0 0px 0">
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9uZXdzbGV0dGVycy81cG0tbmV3c2xldHRlci8zNDQ3MTUvbmF2YWxueS13aWRvdy1pbGwtY2Fycnktb24tZmlnaHQtZm9yLWEtZnJlZS1ydXNzaWE_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPU1OLU1haWxQbHVzLUJyaWVmaW5ncy0yNDAyMTlfQlI1X05FV1NMRVRURVImc2lnbmluPWF1dG8j/65ccb5bc8e50e1c63703ea6bBe232706e" style="margin:0">
+<img alt="" src="https://media.glide.mailplus.co.uk/prod/images/gm_preview/6d5c69a81b35-tmnewsletter5pmcormaccsmith.jpg" width="590" style="width: 100%; max-width: 590px;margin:0px 0 0px 0" />
+</a>
+</td>
+</tr>
+</table>
+<table width="550" align="center" border="0" cellspacing="0" cellpadding="20">
+<tr>
+<td class="body-content">
+<h4 class="date-line">Monday, February 19, 2024</h4>
+<h4 style="font-family: Merriweather-Black, Georgia, Times New Roman, serif;
+font-weight: normal !important;
+margin: 0"></h4>
+<div id="eWoa0mdvif_" class="fr-embedded"><p id="e0wJ_plpR84" data_gid="evRF54eWOab">Good evening,</p><p id="en8wFth5CXm" data_gid="eQuTqPysLp1">The widow of Alexei Navalny has vowed to continue fighting for freedom as she accused Vladimir Putin of murdering her husband.  </p><p id="ewhohcgLWp" data_gid="eQuTqPysLp1">Yulia Navalnaya said she would ‘continue to fight for the freedom of our country’, as Downing Street called for a full investigation into the opposition leader's death.</p><div id="emq_Nk7Pkuy3" class="fr-embedded">
+<table class="feature-top-stories" style="margin-top: 30px; width: 100%">
+<tr>
+<td class="content-padded" align="center" style="padding: 0;
+text-align: center;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 10px">
+<tr>
+<td style="text-align: center; padding: 20px 0 5px 0;"><span class="topic-tag">Today&#x27;s top stories</span></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td data-y="HI:hi">
+<table width="100%" style="padding: 0; margin-bottom: 5px" class="image-wrapper">
+<tr>
+<td style="padding: 5px 0 5px 0">
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ0NzE3L25hdmFsbnktd2lkb3ctaWxsLWNhcnJ5LW9uLWZpZ2h0LWZvci1hLWZyZWUtcnVzc2lhP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1NTi1NYWlsUGx1cy1CcmllZmluZ3MtMjQwMjE5X0JSNV9ORVdTTEVUVEVSJnNpZ25pbj1hdXRv/65ccb5bc8e50e1c63703ea6bB9bdb0787" style="margin:0">
+<img alt="" src="https://media.glide.mailplus.co.uk/prod/images/gm_preview/52876f6f3f1a-header5214549.jpg" width="550" style="width: 100%; max-width: 550px;margin:5px 0 5px 0" />
+</a>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td class="content-padded" style="font-family: Merriweather-Light, serif; padding:0 0 8px 0;">
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ0NzE3L25hdmFsbnktd2lkb3ctaWxsLWNhcnJ5LW9uLWZpZ2h0LWZvci1hLWZyZWUtcnVzc2lhP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1NTi1NYWlsUGx1cy1CcmllZmluZ3MtMjQwMjE5X0JSNV9ORVdTTEVUVEVSJnNpZ25pbj1hdXRv/65ccb5bc8e50e1c63703ea6bC9bdb0787" style="margin:0">
+<h2 style="margin:0 0 0 0">Navalny widow: I’ll carry on fight for a free Russia
+</h2>
+</a>
+</td>
+</tr>
+</table>
+</div><hr id="e7zLC8yzbQuy" /><div id="eWyGJv5Igwnf" class="fr-embedded">
+<table class="feature-top-stories" style="margin-top: 30px; width: 100%">
+<tr>
+<td class="content-padded" align="center" style="padding: 0;
+text-align: center;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 10px">
+<tr>
+<td style="text-align: center; padding: 20px 0 5px 0;"><span class="topic-tag">Today&#x27;s other headlines</span></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td data-y="HI:hi">
+<table width="100%" style="padding: 0; margin-bottom: 5px" class="image-wrapper">
+<tr>
+<td style="padding: 5px 0 5px 0">
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ0NzE4L3N0b25lLW1lLXRoZXJlcy1uby1zdG9wcGluZy1zdGFyLW9mLXRoZS1iYWZ0YXMtZW1tYS1hcy1zaGUtcGFydGllcy13aXRoLWFuZHJldy1hbmQtcGF1bD91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249TU4tTWFpbFBsdXMtQnJpZWZpbmdzLTI0MDIxOV9CUjVfTkVXU0xFVFRFUiZzaWduaW49YXV0bw/65ccb5bc8e50e1c63703ea6bB82813868" style="margin:0">
+<img alt="" src="https://media.glide.mailplus.co.uk/prod/images/gm_preview/dcee677267a6-header5214540.jpg" width="550" style="width: 100%; max-width: 550px;margin:5px 0 5px 0" />
+</a>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td class="content-padded" style="font-family: Merriweather-Light, serif; padding:0 0 8px 0;">
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ0NzE4L3N0b25lLW1lLXRoZXJlcy1uby1zdG9wcGluZy1zdGFyLW9mLXRoZS1iYWZ0YXMtZW1tYS1hcy1zaGUtcGFydGllcy13aXRoLWFuZHJldy1hbmQtcGF1bD91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249TU4tTWFpbFBsdXMtQnJpZWZpbmdzLTI0MDIxOV9CUjVfTkVXU0xFVFRFUiZzaWduaW49YXV0bw/65ccb5bc8e50e1c63703ea6bC82813868" style="margin:0">
+<h2 style="margin:0 0 0 0">Stone me! There’s no stopping star of the Baftas Emma as she parties with Andrew and Paul
+</h2>
+</a>
+</td>
+</tr>
+<tr><td style="padding-bottom: 20px !important;"></td></tr>
+<tr><td data-y="HI:hi">
+<table width="100%" style="padding: 0; margin-bottom: 5px" class="image-wrapper">
+<tr>
+<td style="padding: 5px 0 5px 0">
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ0NzI1L25vdy1sYWJvdXItZnJvbnRiZW5jaGVyLWFjY3VzZXMtaXNyYWVsLW9mLWdvaW5nLWJleW9uZC1zZWxmLWRlZmVuY2UtaW4tZ2F6YT91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249TU4tTWFpbFBsdXMtQnJpZWZpbmdzLTI0MDIxOV9CUjVfTkVXU0xFVFRFUiZzaWduaW49YXV0bw/65ccb5bc8e50e1c63703ea6bBcb1b730c" style="margin:0">
+<img alt="" src="https://media.glide.mailplus.co.uk/prod/images/gm_preview/b95092630fd4-header5214538.jpg" width="550" style="width: 100%; max-width: 550px;margin:5px 0 5px 0" />
+</a>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td class="content-padded" style="font-family: Merriweather-Light, serif; padding:0 0 8px 0;">
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ0NzI1L25vdy1sYWJvdXItZnJvbnRiZW5jaGVyLWFjY3VzZXMtaXNyYWVsLW9mLWdvaW5nLWJleW9uZC1zZWxmLWRlZmVuY2UtaW4tZ2F6YT91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249TU4tTWFpbFBsdXMtQnJpZWZpbmdzLTI0MDIxOV9CUjVfTkVXU0xFVFRFUiZzaWduaW49YXV0bw/65ccb5bc8e50e1c63703ea6bCcb1b730c" style="margin:0">
+<h2 style="margin:0 0 0 0">Now Labour frontbencher accuses Israel of ‘going beyond self-defence’ in Gaza
+</h2>
+</a>
+</td>
+</tr>
+<tr><td style="padding-bottom: 20px !important;"></td></tr>
+<tr><td data-y="HI:hi">
+<table width="100%" style="padding: 0; margin-bottom: 5px" class="image-wrapper">
+<tr>
+<td style="padding: 5px 0 5px 0">
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ0NzI0L3BpY3R1cmVkLi4uLWNoaWxkcmVuLWZvdW5kLWRlYWQtYXMtd29tYW4tYXJyZXN0ZWQtZm9yLW11cmRlcj91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249TU4tTWFpbFBsdXMtQnJpZWZpbmdzLTI0MDIxOV9CUjVfTkVXU0xFVFRFUiZzaWduaW49YXV0bw/65ccb5bc8e50e1c63703ea6bB8734bef8" style="margin:0">
+<img alt="" src="https://media.glide.mailplus.co.uk/prod/images/gm_preview/a69b924effd3-header5214537.jpg" width="550" style="width: 100%; max-width: 550px;margin:5px 0 5px 0" />
+</a>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td class="content-padded" style="font-family: Merriweather-Light, serif; padding:0 0 8px 0;">
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ0NzI0L3BpY3R1cmVkLi4uLWNoaWxkcmVuLWZvdW5kLWRlYWQtYXMtd29tYW4tYXJyZXN0ZWQtZm9yLW11cmRlcj91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249TU4tTWFpbFBsdXMtQnJpZWZpbmdzLTI0MDIxOV9CUjVfTkVXU0xFVFRFUiZzaWduaW49YXV0bw/65ccb5bc8e50e1c63703ea6bC8734bef8" style="margin:0">
+<h2 style="margin:0 0 0 0">Pictured... children found dead as woman arrested for murder
+</h2>
+</a>
+</td>
+</tr>
+<tr><td style="padding-bottom: 20px !important;"></td></tr>
+<tr><td data-y="HI:hi">
+<table width="100%" style="padding: 0; margin-bottom: 5px" class="image-wrapper">
+<tr>
+<td style="padding: 5px 0 5px 0">
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ0NzIwL2ZpcnN0LWhpcHB5LWNyYWNrLWRlYWxlci10by1iZS1qYWlsZWQ_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPU1OLU1haWxQbHVzLUJyaWVmaW5ncy0yNDAyMTlfQlI1X05FV1NMRVRURVImc2lnbmluPWF1dG8/65ccb5bc8e50e1c63703ea6bB3128aedc" style="margin:0">
+<img alt="" src="https://media.glide.mailplus.co.uk/prod/images/gm_preview/6c91cf792efc-header5214541.jpg" width="550" style="width: 100%; max-width: 550px;margin:5px 0 5px 0" />
+</a>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td class="content-padded" style="font-family: Merriweather-Light, serif; padding:0 0 8px 0;">
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ0NzIwL2ZpcnN0LWhpcHB5LWNyYWNrLWRlYWxlci10by1iZS1qYWlsZWQ_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPU1OLU1haWxQbHVzLUJyaWVmaW5ncy0yNDAyMTlfQlI1X05FV1NMRVRURVImc2lnbmluPWF1dG8/65ccb5bc8e50e1c63703ea6bC3128aedc" style="margin:0">
+<h2 style="margin:0 0 0 0">First ‘hippy crack’ dealer to be jailed
+</h2>
+</a>
+</td>
+</tr>
+<tr><td style="padding-bottom: 20px !important;"></td></tr>
+<tr><td data-y="HI:hi">
+<table width="100%" style="padding: 0; margin-bottom: 5px" class="image-wrapper">
+<tr>
+<td style="padding: 5px 0 5px 0">
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ0NzIyL2JyaXRpc2gtaGF2ZS01NDYtd29yZHMtZm9yLWRydW5rP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1NTi1NYWlsUGx1cy1CcmllZmluZ3MtMjQwMjE5X0JSNV9ORVdTTEVUVEVSJnNpZ25pbj1hdXRv/65ccb5bc8e50e1c63703ea6bBf97ac53a" style="margin:0">
+<img alt="" src="https://media.glide.mailplus.co.uk/prod/images/gm_preview/7184d76b59fc-header5214542.jpg" width="550" style="width: 100%; max-width: 550px;margin:5px 0 5px 0" />
+</a>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td class="content-padded" style="font-family: Merriweather-Light, serif; padding:0 0 8px 0;">
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ0NzIyL2JyaXRpc2gtaGF2ZS01NDYtd29yZHMtZm9yLWRydW5rP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1NTi1NYWlsUGx1cy1CcmllZmluZ3MtMjQwMjE5X0JSNV9ORVdTTEVUVEVSJnNpZ25pbj1hdXRv/65ccb5bc8e50e1c63703ea6bCf97ac53a" style="margin:0">
+<h2 style="margin:0 0 0 0">British have 546 words for ‘drunk’
+</h2>
+</a>
+</td>
+</tr>
+<tr><td style="padding-bottom: 20px !important;"></td></tr>
+<tr><td data-y="HI:hi">
+<table width="100%" style="padding: 0; margin-bottom: 5px" class="image-wrapper">
+<tr>
+<td style="padding: 5px 0 5px 0">
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ0NzIzL2JveS10d28tbWlzc2luZy1hZnRlci1mYWxsLWludG8tcml2ZXI_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPU1OLU1haWxQbHVzLUJyaWVmaW5ncy0yNDAyMTlfQlI1X05FV1NMRVRURVImc2lnbmluPWF1dG8/65ccb5bc8e50e1c63703ea6bB5123b1da" style="margin:0">
+<img alt="" src="https://media.glide.mailplus.co.uk/prod/images/gm_preview/1bcab7bd0b2f-header5214545.jpg" width="550" style="width: 100%; max-width: 550px;margin:5px 0 5px 0" />
+</a>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td class="content-padded" style="font-family: Merriweather-Light, serif; padding:0 0 8px 0;">
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ0NzIzL2JveS10d28tbWlzc2luZy1hZnRlci1mYWxsLWludG8tcml2ZXI_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPU1OLU1haWxQbHVzLUJyaWVmaW5ncy0yNDAyMTlfQlI1X05FV1NMRVRURVImc2lnbmluPWF1dG8/65ccb5bc8e50e1c63703ea6bC5123b1da" style="margin:0">
+<h2 style="margin:0 0 0 0">Boy, two, missing after fall into river
+</h2>
+</a>
+</td>
+</tr>
+</table>
+</div><hr id="eAYM6lCDY3r" /><div id="eHt7lxpnlns" class="fr-embedded">
+<table class="feature-top-stories" style="margin-top: 30px; width: 100%">
+<tr>
+<td class="content-padded" align="center" style="padding: 0;
+text-align: center;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 10px">
+<tr>
+<td style="text-align: center; padding: 20px 0 5px 0;"><span class="topic-tag">GOOD HEALTH</span></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td data-y="HI:hi">
+<table width="100%" style="padding: 0; margin-bottom: 5px" class="image-wrapper">
+<tr>
+<td style="padding: 5px 0 5px 0">
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ0NzE5L3doYXQtaW0tZG9pbmctdG8tc2xvdy1kb3duLWRlbWVudGlhLi4uYnktdGhlLWV4cGVydC13aG9zLWJlZW4tZGlhZ25vc2VkLXdpdGgtYWx6aGVpbWVycy1oaW1zZWxmP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1NTi1NYWlsUGx1cy1CcmllZmluZ3MtMjQwMjE5X0JSNV9ORVdTTEVUVEVSJnNpZ25pbj1hdXRv/65ccb5bc8e50e1c63703ea6bB9d6cb667" style="margin:0">
+<img alt="" src="https://media.glide.mailplus.co.uk/prod/images/gm_preview/43d5578158b1-header5214544.jpg" width="550" style="width: 100%; max-width: 550px;margin:5px 0 5px 0" />
+</a>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td class="content-padded" style="font-family: Merriweather-Light, serif; padding:0 0 8px 0;">
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvMzQ0NzE5L3doYXQtaW0tZG9pbmctdG8tc2xvdy1kb3duLWRlbWVudGlhLi4uYnktdGhlLWV4cGVydC13aG9zLWJlZW4tZGlhZ25vc2VkLXdpdGgtYWx6aGVpbWVycy1oaW1zZWxmP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1NTi1NYWlsUGx1cy1CcmllZmluZ3MtMjQwMjE5X0JSNV9ORVdTTEVUVEVSJnNpZ25pbj1hdXRv/65ccb5bc8e50e1c63703ea6bC9d6cb667" style="margin:0">
+<h2 style="margin:0 0 0 0">What I’m doing to slow down dementia...by the expert who’s been diagnosed with Alzheimer’s himself
+</h2>
+</a>
+</td>
+</tr>
+</table>
+</div><hr id="e_FgAMSehn" /><p id="e5LEpS8Hpwzb" class="" data_gid="eTV0X1W1Jm"><strong id="efvKSF_ubi65" data_gid="ePOETCyqpU">Watch and listen:</strong><span> </span>
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9yYWRpby9wb2RjYXN0cy90aGUtY3Jvd24tZmFjdC1vci1maWN0aW9uLzMzMjgyNz91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249TU4tTWFpbFBsdXMtQnJpZWZpbmdzLTI0MDIxOV9CUjVfTkVXU0xFVFRFUiZzaWduaW49YXV0bw/65ccb5bc8e50e1c63703ea6bBdc831a41" style="margin:0">The Crown: Fact or Fiction?</a><span> | </span>
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci90di9wYWxhY2UtY29uZmlkZW50aWFsP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1NTi1NYWlsUGx1cy1CcmllZmluZ3MtMjQwMjE5X0JSNV9ORVdTTEVUVEVSJnNpZ25pbj1hdXRv/65ccb5bc8e50e1c63703ea6bB686612ca" style="margin:0">Palace Confidential</a><span> </span></p><hr id="eBS03eJI9iKz" data_gid="egMOmZxz6B" /><div id="eKuk4yoIWbfF" class="fr-embedded">
+<table class="feature-top-stories" style="margin-top: 30px; width: 100%">
+<tr>
+<td class="content-padded" align="center" style="padding: 0;
+text-align: center;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 10px">
+<tr>
+<td style="text-align: center; padding: 20px 0 5px 0;"><span class="topic-tag">WATCH TONIGHT</span></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td data-y="YT:vi">
+<table width="100%" style="padding: 0; margin-bottom: 5px" class="image-wrapper">
+<tr>
+<td style="padding: 5px 0 5px 0">
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci90di9maW5kZXIvZHJhbWEvMzQzMTMxL2JyZWF0aHRha2luZz91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249TU4tTWFpbFBsdXMtQnJpZWZpbmdzLTI0MDIxOV9CUjVfTkVXU0xFVFRFUiZzaWduaW49YXV0bw/65ccb5bc8e50e1c63703ea6bBba042fee" style="margin:0">
+<img alt="" src="https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fimg.youtube.com%2Fvi%2FnJjMy71v7ZQ%2Fmaxresdefault.jpg&amp;src1=https%3A%2F%2Fassets.glide.mailplus.co.uk%2Fprod%2Fassets%2Ficon-play-v2-70.de23c1bc88e4f035c3bad133b67fe517.png" width="550" style="width: 100%; max-width: 550px;margin:5px 0 5px 0" />
+</a>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td class="content-padded" style="font-family: Merriweather-Light, serif; padding:0 0 8px 0;">
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci90di9maW5kZXIvZHJhbWEvMzQzMTMxL2JyZWF0aHRha2luZz91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249TU4tTWFpbFBsdXMtQnJpZWZpbmdzLTI0MDIxOV9CUjVfTkVXU0xFVFRFUiZzaWduaW49YXV0bw/65ccb5bc8e50e1c63703ea6bCba042fee" style="margin:0">
+<h2 style="margin:0 0 0 0">Breathtaking
+</h2>
+</a>
+</td>
+</tr>
+</table>
+</div><hr id="eGtX_goilzi7" /><div id="ero16Fiw0RcC" class="fr-embedded">
+<table class="feature-top-stories" style="margin-top: 30px; width: 100%">
+<tr>
+<td class="content-padded" align="center" style="padding: 0;
+text-align: center;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 10px">
+<tr>
+<td style="text-align: center; padding: 20px 0 5px 0;"><span class="topic-tag">SPORT</span></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td data-y="HI:hi">
+<table width="100%" style="padding: 0; margin-bottom: 5px" class="image-wrapper">
+<tr>
+<td style="padding: 5px 0 5px 0">
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL3Nwb3J0L3J1Z2J5L3J1Z2J5LXVuaW9uLzM0NDY2Ny9lbmdsYW5kLWNhbi1uZXZlci1jb21wZXRlLXdpdGgtdGhlLWhvc3RpbGl0eS1zZWFyZWQtaW50by1zY290bGFuZHMtbmF0aW9uYWwtcHN5Y2hlP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1NTi1NYWlsUGx1cy1CcmllZmluZ3MtMjQwMjE5X0JSNV9ORVdTTEVUVEVSJnNpZ25pbj1hdXRv/65ccb5bc8e50e1c63703ea6bBcfc0b724" style="margin:0">
+<img alt="" src="https://media.glide.mailplus.co.uk/prod/images/gm_preview/56afdb464ab1-header5213983.jpg" width="550" style="width: 100%; max-width: 550px;margin:5px 0 5px 0" />
+</a>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td class="content-padded" style="font-family: Merriweather-Light, serif; padding:0 0 8px 0;">
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL3Nwb3J0L3J1Z2J5L3J1Z2J5LXVuaW9uLzM0NDY2Ny9lbmdsYW5kLWNhbi1uZXZlci1jb21wZXRlLXdpdGgtdGhlLWhvc3RpbGl0eS1zZWFyZWQtaW50by1zY290bGFuZHMtbmF0aW9uYWwtcHN5Y2hlP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1NTi1NYWlsUGx1cy1CcmllZmluZ3MtMjQwMjE5X0JSNV9ORVdTTEVUVEVSJnNpZ25pbj1hdXRv/65ccb5bc8e50e1c63703ea6bCcfc0b724" style="margin:0">
+<h2 style="margin:0 0 0 0">England can never compete with the hostility seared into Scotland’s national psyche
+</h2>
+</a>
+</td>
+</tr>
+</table>
+</div><hr id="eBOUHvJvIuIp" /><div id="ein0KpyW0mbl" class="fr-embedded">
+<table class="feature-top-stories" style="margin-top: 30px; width: 100%">
+<tr>
+<td class="content-padded" align="center" style="padding: 0;
+text-align: center;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 10px">
+<tr>
+<td style="text-align: center; padding: 20px 0 5px 0;"><span class="topic-tag">Pictures of the day</span></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td data-y="BI: si">
+<table width="100%" style="padding: 0; margin-bottom: 5px" class="image-wrapper">
+<tr>
+<td style="padding: 5px 0 5px 0">
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvcGljcy1vZi10aGUtZGF5LzM0NDcxMC9hLW1lb3dpbmctbW9kZWwtcmFjaW5nLWJ1bGxzLWFuZC1hLXRyaXAtdG8td29uZGVybGFuZD91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249TU4tTWFpbFBsdXMtQnJpZWZpbmdzLTI0MDIxOV9CUjVfTkVXU0xFVFRFUiZzaWduaW49YXV0bw/65ccb5bc8e50e1c63703ea6bB404be7e1" style="margin:0">
+<img alt="" src="https://media.glide.mailplus.co.uk/prod/images/gm_preview/263eae054de9-sei192310324.jpg" width="550" style="width: 100%; max-width: 550px;margin:5px 0 5px 0" />
+</a>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td class="content-padded" style="font-family: Merriweather-Light, serif; padding:0 0 8px 0;">
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3MvcGljcy1vZi10aGUtZGF5LzM0NDcxMC9hLW1lb3dpbmctbW9kZWwtcmFjaW5nLWJ1bGxzLWFuZC1hLXRyaXAtdG8td29uZGVybGFuZD91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249TU4tTWFpbFBsdXMtQnJpZWZpbmdzLTI0MDIxOV9CUjVfTkVXU0xFVFRFUiZzaWduaW49YXV0bw/65ccb5bc8e50e1c63703ea6bC404be7e1" style="margin:0">
+<h2 style="margin:0 0 0 0">A meowing model, racing bulls and a trip to Wonderland
+</h2>
+</a>
+</td>
+</tr>
+</table>
+</div><hr id="eGhI_uqz8ENn" /><p id="ekzFYhenbTOc" data_gid="ecsR8biHTPuL"><span>Enjoy this email? Sign up to our other newsletters including </span>
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL3Nob3diaXovMTY5NTEzL3NpZ24tdXAtbmV3cy1kYWlseS1tYWlsLXR2LXNob3diaXotbmV3c2xldHRlci1taWtlLW11bHZpaGlsbD91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249TU4tTWFpbFBsdXMtQnJpZWZpbmdzLTI0MDIxOV9CUjVfTkVXU0xFVFRFUiZzaWduaW49YXV0bw/65ccb5bc8e50e1c63703ea6bBb652efd7" style="margin:0">TV and Showbiz</a><span>, </span>
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL25ld3Mvcm95YWxzLzY1NjI1L3NpZ24tdXAtbm93LWZvci10aGUtbmV3LXBhbGFjZS1jb25maWRlbnRpYWwtbmV3c2xldHRlci1ieS1kaWFyeS1lZGl0b3ItcmljaGFyZC1lZGVuP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1NTi1NYWlsUGx1cy1CcmllZmluZ3MtMjQwMjE5X0JSNV9ORVdTTEVUVEVSJnNpZ25pbj1hdXRv/65ccb5bc8e50e1c63703ea6bBbd4a5a9f" style="margin:0">Palace Confidential</a><span> and </span>
+<a href="https://link-replica.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubWFpbHBsdXMuY28udWsvbGluay9pbi1hcHAtYnJvd3Nlci9lZGl0aW9uL3Nwb3J0LzIwNjQ4OC9zaWduLXVwLW5vdy1mb3ItdGhlLW1haWwtZm9vdGJhbGwtbmV3c2xldHRlcj91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249TU4tTWFpbFBsdXMtQnJpZWZpbmdzLTI0MDIxOV9CUjVfTkVXU0xFVFRFUiZzaWduaW49YXV0bw/65ccb5bc8e50e1c63703ea6bB984547a0" style="margin:0">Football</a></p></div><p id="e0rOFCve0hg"></p><p id="e2oRPPQ6IEb" class=""></p><p id="ekbfiw2oMkA"></p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="590" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<div class="footer">
+<text><p>Add <a href="mailto:newsletter@news.dailymail.co.uk">newsletter@news.dailymail.co.uk</a> to your safelist or contact list to ensure you never miss an email from us.</p>
+<p>You can change your email preferences at any time&nbsp;<a href="https://link.news.mailplus.co.uk/manage/4w5/mp-preference?email=simon.nachtergaele@gmail.com&hash=aa983b66338ba0d4bb14b0763d456dc5"  target="_blank">here</a>.</p>
+<p>This email was sent by Associated Newspapers Limited, Northcliffe House, 2 Derry Street, London W8 5TT Registered in England and Wales with company number 00084121.</p>
+<p><a href="https://link.news.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubXltYWlsYWNjb3VudC5jby51ay9wYWdlcy9tYWlscGx1cy90ZXJtc0FuZENvbmRpdGlvbnM_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPU1OLU1haWxQbHVzLUJyaWVmaW5ncy0yNDAyMTlfQlI1X05FV1NMRVRURVImc2lnbmluPWF1dG8/65ccb5bc8e50e1c63703ea6bBc9aefb3b" target="_blank">Terms</a>&nbsp;|&nbsp;<a href="https://link.news.mailplus.co.uk/click/34398901.127829/aHR0cHM6Ly93d3cubXltYWlsYWNjb3VudC5jby51ay9wYWdlcy9tYWlscGx1cy9wcml2YWN5QW5kQ29va2llc1BvbGljeT91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249TU4tTWFpbFBsdXMtQnJpZWZpbmdzLTI0MDIxOV9CUjVfTkVXU0xFVFRFUiZzaWduaW49YXV0bw/65ccb5bc8e50e1c63703ea6bB6391310c" target="_blank">Privacy Policy</a></p>
+<div style=”display:none!important;font-size:0px;”>https://link.news.mailplus.co.uk/oc/65ccb5bc8e50e1c63703ea6bkhad1.2qmt/57d7c9d6&list=mailplus</div></text>
+</div>
+</td>
+</tr>
+</table>
+<div style="display: none;"><a href="https://link.news.mailplus.co.uk/click/34398901.127829/aHR0cDovL3d3dy5kYWlseW1haWwuY28udWs_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPU1OLU1haWxQbHVzLUJyaWVmaW5ncy0yNDAyMTlfQlI1X05FV1NMRVRURVImc2lnbmluPWF1dG8/65ccb5bc8e50e1c63703ea6bB8d4c0ee1"><img src="https://link.news.mailplus.co.uk/img/65ccb5bc8e50e1c63703ea6bkhad1.2qmt/1f3b5280.gif" alt="" border="0" /></a></div>
+</body>
+</html>
